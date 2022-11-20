@@ -1,0 +1,107 @@
+/* Navbar */
+nav{
+  background-color: black;
+}
+
+.logo {
+  color: white;
+}
+
+.logo:hover {
+  color: #dc3545;
+  transition: all 0.1s linear;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+.nav-link:hover {
+  background-color: white;
+  color: black;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+/* Hero-section */
+
+.bg {
+  background-image: linear-gradient(
+      to top,
+      rgba(127, 121, 121, 0),
+      rgba(0, 0, 0, 0.718)
+    ),
+    url(/assets/images/bg.png);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  
+}
+
+/* products -section */
+
+.product-img {
+  width: 250px;
+  height: 250px;
+}
+
+#promo .card:hover{
+  border-color: black;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+/* About-section */
+.jumbotron {
+  height: 80vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 5)),
+    url("/assets/images/istockphoto-1188412964-612x612.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  color: white;
+}
+
+
+/* Footer-section */
+
+.icon span i{
+  color: white;
+  cursor: pointer;
+}
+.icon span i:hover{
+  color: #dc3545;
+}
+.links a{
+  color: white;
+}
+.links a:hover{
+  color: #dc3545;
+}
+
+
+/* Responsive Section */
+
+@media only screen and (min-width: 600px) {
+  .product-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .navbar{
+    position: static;
+    background: transparent;
+  }
+  .product-img {
+    width: 350px;
+    height: 350px;
+  }
+}
